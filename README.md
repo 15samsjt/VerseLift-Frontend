@@ -6,7 +6,7 @@ VerseLift is a web application that suggests Bible verses based on a user's curr
 
 - Input your current feeling and receive a matching Bible verse.
 - Fully deployed online: frontend and backend.
-- Fast and responsive user interface.
+- Responsive user interface.
 
 ## Tech Stack
 
