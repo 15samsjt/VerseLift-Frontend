@@ -1,23 +1,22 @@
-# VerseLift Frontend
+# VerseLift
 
-This is the frontend for **VerseLift**, a web app that fetches Bible verses based on a user’s feelings.
+VerseLift is a web application that suggests Bible verses based on a user's current feeling. It consists of a React frontend and a Node.js/Express backend deployed on Render.
 
 ## Features
 
-- Input your current feeling
-- Fetch a relevant Bible verse from the backend
-- View verse immediately in the UI
-- Works with multiple feelings (e.g., happy, anxious, etc.)
+- Input your current feeling and receive a matching Bible verse.
+- Fully deployed online: frontend and backend.
+- Fast and responsive user interface.
 
 ## Tech Stack
 
-- **Frontend:** React, Vite
-- **Styling:** CSS (or your preferred styling approach)
-- **API Calls:** Axios
-- **Deployment:** Render
+- Frontend: React, Vite, Axios
+- Backend: Node.js, Express
+- Deployment: Render
 
-## Setup
+## How to Run Locally
 
-1. Clone the repository:
-```bash
-git clone https://github.com/15samsjt/VerseLift-Frontend.git
+1. Clone the frontend and backend repositories:
+   ```bash
+   git clone https://github.com/15samsjt/VerseLift-Frontend.git
+   git clone https://github.com/15samsjt/VerseLift-Backend.git
