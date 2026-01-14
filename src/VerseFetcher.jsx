@@ -6,21 +6,23 @@ export default function VerseFetcher() {
   const [loading, setLoading] = useState(false);
   const [userFeeling, setUserFeeling] = useState('');
 
+  const API_URL = "https://verselift-backend.onrender.com";
+
   const getVerse = async () => {
     console.log("Feeling sent to backend:", userFeeling);
 
     setLoading(true);
     try {
-      const response = await axios.get(
-        `https://verselift-backend.onrender.com/verse?feeling=${encodeURIComponent(userFeeling)}`
-      );
-      setVerse(response.data);
-    } catch (error) {
-      console.error(error);
-      setVerse({ text: "Failed to fetch verse." });
-    }
-    setLoading(false);
-  };
+    const response = await axios.get(
+      `${API_URL}/verse?feeling=${encodeURIComponent(userFeeling)}`
+    );
+    setVerse(response.data);
+  } catch (error) {
+    console.error(error);
+    setVerse({ text: "Failed to fetch verse." });
+  }
+  setLoading(false);
+};
 
   return (
   <div style={{
